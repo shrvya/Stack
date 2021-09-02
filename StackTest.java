@@ -8,7 +8,7 @@ public class StackTest {
 
 	/*
 	 * this is the main method it will create object of Integer type for
-	 * StackOpertaion and call method push an print
+	 * StackOpertaion and call method push ,print,pop
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,10 +19,8 @@ public class StackTest {
 		linklist.push(30);
 		linklist.push(56);
 		linklist.print();
+		linklist.pop();
+		linklist.print();
 	}
 
 }
-
-
-
-
