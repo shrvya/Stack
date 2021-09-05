@@ -4,9 +4,10 @@ package stack;
  * this class implements stack using linked list
  * head,current,temp are pointers to nodes of linked list
  * temp,current can be used to iterate through the linked list
+ * variable empty is used see if linked list is empty
  */
 
-public class StackOperation<T> {
+public class Enqueue<T> {
 
 	Node head, current, temp;
 	Boolean empty = false;
@@ -31,30 +32,25 @@ public class StackOperation<T> {
 	}
 
 	/*
-	 * this is push method of stack the last pushed element is at the top this is
-	 * same like adding nodes at front in linked list data is the key value of the
-	 * node.this method doesnt return anything
+	 * this method will add new nodes to then end data refers to data in the node
+	 * current is a pointer to nodes and keeps iterating the linked list head will
+	 * point to first node.Since it is a queue first element will remain first last
+	 * added element will be last
 	 */
-	public void push(T data) {
+	public void append(T data) {
+		Node newnode = new Node(data);
+		if (head == null) {
 
-		Node<T> newnode = new Node<T>(data);
-		newnode.next = head;
-		head = newnode;
-	}
+			head = newnode;
+			current = head;
 
-	/*
-	 * this method will remove nodes one by one till list is empty the last inserted
-	 * node is popped first .temp will point to head
-	 * 
-	 */
-	public void pop() {
+		} else {
 
-		temp = head;
-		while (head != null) {
-			temp = head;
-			System.out.println("Popped :" + temp.data);
-			head = temp.next;
+			current.next = newnode;
+			current = newnode;
+
 		}
+
 	}
 
 	/*
