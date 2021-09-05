@@ -8,7 +8,7 @@ public class QueueTest {
 
 	/*
 	 * this is the main method it will create object of Integer type for
-	 * StackOpertaion and call method push ,print,pop
+	 * Enqueue class and call its methods
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

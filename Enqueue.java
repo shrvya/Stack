@@ -1,7 +1,7 @@
 package stack;
 
 /*
- * this class implements stack using linked list
+ * this class implements queue using linked list.it uses generics
  * head,current,temp are pointers to nodes of linked list
  * temp,current can be used to iterate through the linked list
  *boolean variable empty is used see if linked list is empty
