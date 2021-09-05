@@ -14,12 +14,14 @@ public class QueueTest {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
 		Enqueue<Integer> linklist = new Enqueue<Integer>();
-		System.out.println("The Que is :");
 		linklist.append(56);
 		linklist.append(30);
 		linklist.append(70);
-
-		linklist.print();
+		linklist.add(90);
+		linklist.add(100);
+		linklist.deleteRear();
+		linklist.deleteFront();
+		linklist.countElements();
 	}
 
 }
